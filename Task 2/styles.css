@@ -21,13 +21,14 @@ body {
     color: var(--text-color);
 }
 
+
 .menu-container {
     width: 90%;
     max-width: 400px;
     background-color: var(--menu-bg);
     padding: 30px 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    margin: 20px auto;
+    margin: 20px ;
 }
 
 header {
@@ -56,6 +57,10 @@ header h1 {
     margin: 15px 0;
     padding-bottom: 5px;
     /* border-bottom: 1px solid var(--accent-color); */
+}
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 
