@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+.text{
+    display: flex;
+    background-color: rgb(3, 3, 38);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 4px;
+}
+.image {
+    height: 200px;
+    width: 200px;   
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
