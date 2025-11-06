@@ -1,0 +1,9 @@
+.hero-bg {
+    background-image: url('images/home.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    background-color: rgba(30, 27, 49, 0.85); 
+}
