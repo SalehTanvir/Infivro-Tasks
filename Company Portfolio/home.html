@@ -14,36 +14,70 @@
 </head>
 
 <body>
-    <nav class=" bg-slate-700 text-white py-3 px-8 flex justify-between items-center ">
-        <div class="flex space-x-6 items-center">
-            <span><i class="fa-solid fa-phone text-blue-400"></i> +1000-000-2020</span>
-            <span><i class="fa-solid fa-envelope text-blue-400"></i> infivro@gmail.com</span>
-        </div>
-        <div class="flex space-x-4">
-            <a href="#" class="text-blue-400"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" class="text-blue-400"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="text-blue-400"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-    </nav>
-    <header class="sticky top-0 z-10 flex justify-between items-center py-4 px-10 bg-white shadow-sm">
+    <header class="sticky top-0 z-50 flex justify-between items-center py-4 px-4 bg-white shadow-lg md:px-10">
         <div class="flex items-center space-x-3">
             <div class="bg-blue-600 text-white rounded-full p-2">
                 <i class="fa-solid fa-fingerprint text-lg"></i>
             </div>
-            <h1 class="text-xl font-semibold">IT Company</h1>
+            <h1 class="text-xl font-extrabold text-gray-900 tracking-tight">IT Company</h1>
         </div>
-        <ul class="flex space-x-8 text-gray-800 font-medium">
-            <li><a href="#" class="hover:text-blue-600  pb-1">Home</a></li>
-            <li><a href="#" class="hover:text-blue-600">Services</a></li>
-            <li><a href="#" class="hover:text-blue-600">Projects</a></li>
-            <li><a href="#" class="hover:text-blue-600">Blogs</a></li>
-            <li><a href="#" class="hover:text-blue-600">About Us</a></li>
-            <li><a href="#" class="hover:text-blue-600">Pricing</a></li>
-        </ul>
-        <a href="#" class="bg-blue-600 text-white px-5 py-2 rounded-full font-medium hover:bg-blue-700 transition">
-            Get A Quote
-        </a>
+        <nav class="hidden md:flex items-center space-x-8">
+            <ul class="flex space-x-8 text-gray-700 font-medium">
+                <li><a href="#"
+                        class="hover:text-blue-600 transition duration-150 border-b-2 border-transparent hover:border-blue-600 pb-1">Home</a>
+                </li>
+                <li><a href="#"
+                        class="hover:text-blue-600 transition duration-150 border-b-2 border-transparent hover:border-blue-600 pb-1">Services</a>
+                </li>
+                <li><a href="#"
+                        class="hover:text-blue-600 transition duration-150 border-b-2 border-transparent hover:border-blue-600 pb-1">Projects</a>
+                </li>
+                <li><a href="#"
+                        class="hover:text-blue-600 transition duration-150 border-b-2 border-transparent hover:border-blue-600 pb-1">Blogs</a>
+                </li>
+                <li><a href="#"
+                        class="hover:text-blue-600 transition duration-150 border-b-2 border-transparent hover:border-blue-600 pb-1">About
+                        Us</a></li>
+                <li><a href="#"
+                        class="hover:text-blue-600 transition duration-150 border-b-2 border-transparent hover:border-blue-600 pb-1">Pricing</a>
+                </li>
+            </ul>
+            <a href="#"
+                class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold shadow-md hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                Get A Quote
+            </a>
+        </nav>
+
+        <button id="menu-toggle"
+            class="md:hidden text-gray-800 p-2 rounded-lg hover:bg-gray-100 transition focus:ring-2 focus:ring-blue-500">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </header>
+    <div id="mobile-menu-content"
+        class="md:hidden hidden fixed top-16 left-0 right-0 z-40 bg-white border-t border-gray-100 shadow-xl transition-all duration-300 ease-in-out">
+        <div class="flex flex-col p-6 space-y-4">
+            <a href="#"
+                class="text-lg font-medium text-gray-700 hover:text-blue-600 border-b border-gray-100 pb-2 transition duration-150">Home</a>
+            <a href="#"
+                class="text-lg font-medium text-gray-700 hover:text-blue-600 border-b border-gray-100 pb-2 transition duration-150">Services</a>
+            <a href="#"
+                class="text-lg font-medium text-gray-700 hover:text-blue-600 border-b border-gray-100 pb-2 transition duration-150">Projects</a>
+            <a href="#"
+                class="text-lg font-medium text-gray-700 hover:text-blue-600 border-b border-gray-100 pb-2 transition duration-150">Blogs</a>
+            <a href="#"
+                class="text-lg font-medium text-gray-700 hover:text-blue-600 border-b border-gray-100 pb-2 transition duration-150">About
+                Us</a>
+            <a href="#"
+                class="text-lg font-medium text-gray-700 hover:text-blue-600 pb-2 transition duration-150">Pricing</a>
+
+            <div class="pt-4">
+                <a href="#"
+                    class="block bg-blue-600 text-white text-center px-5 py-3 rounded-xl font-bold shadow-lg hover:bg-blue-700 transition duration-300">
+                    Get A Quote
+                </a>
+            </div>
+        </div>
+    </div>
 
     <section class="hero-bg min-h-screen flex items-center justify-start relative">
         <div class="overlay w-full h-full absolute top-0 left-0"></div>
@@ -76,17 +110,13 @@
                                 clip-rule="evenodd" />
                         </svg>
                     </a>
-
                     <a href="#"
                         class="inline-flex items-center justify-center w-full sm:w-auto px-8 py-3 text-base font-medium rounded-md text-white border border-white sm:border-transparent border-b transition duration-300">
                         View All Services
                     </a>
                 </div>
-
             </div>
         </div>
     </section>
-
 </body>
-
 </html>
